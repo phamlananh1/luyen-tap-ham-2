@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt("Nhập một kí tự");
+    var nguyenAm = ["u", "e", "o", "a", "i"];
+    var result = check(a);
+    function check(x) {
+        for (var i = 0; i < nguyenAm.length; i++) {
+            if (x === nguyenAm[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+    alert(result);
+</script>
+</body>
+</html>

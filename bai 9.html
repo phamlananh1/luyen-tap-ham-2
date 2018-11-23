@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = ['c', 'd', '3', '1'];
+    var a = prompt("Nhập một kí tự : ");
+    function kiemTra(arr, a){
+        dem = 0;
+        for (var i = 0; i < arr.length; i++){
+            if(arr[i] === a) {
+                dem++;
+            }
+        }return dem;
+    }
+    var result = kiemTra(arr, a);
+    if (result !== 0) {
+        alert("Kí tự " + a + " xuất hiện " + result + " lần");
+    }else alert("-1");
+</script>
+</body>
+</html>
